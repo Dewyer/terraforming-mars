@@ -169,7 +169,6 @@ export const PaymentWidgetMixin = {
       case 'plants':
       if (model.hasOwnProperty('available')) {
           amount = model.available?.[unit] ?? -1;
-          console.log('amount', amount, unit);
           break;
         }
       // eslint-disable-next-line no-fallthrough
@@ -193,10 +192,6 @@ export const PaymentWidgetMixin = {
         amount = (model.playerinput as any)[unit];
         break;
       }
-
-      console.log('amount', amount);
-      console.log('unit', unit);
-      console.log('thisPlayer', thisPlayer);
 
       if (amount === undefined) {
         return 0;

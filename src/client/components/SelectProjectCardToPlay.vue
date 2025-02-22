@@ -321,14 +321,11 @@ export default Vue.extend({
       if (!this.hasUnits(unit)) {
         return false;
       }
-      console.log('unit2', unit);
-      console.log('tags2', this.tags); 
+
 
       if (this.card === undefined) {
         return false;
-      }
-      console.log('unit3', unit);
-      console.log('tags4', this.tags); 
+      } 
 
       return this.cardCanUse(unit);
     },

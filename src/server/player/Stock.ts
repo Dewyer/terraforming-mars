@@ -222,6 +222,27 @@ export class Stock {
     if (units.heat !== 0) {
       this.add(Resource.HEAT, units.heat, options);
     }
+    if (units.tungstensteel !== 0) {
+      this.add(Resource.TUNGSTENSTEEL, units.tungstensteel, options);
+    }
+    if (units.naquadah !== 0) {
+      this.add(Resource.NAQUADAH, units.naquadah, options);
+    }
+    if (units.neutronium !== 0) {
+      this.add(Resource.NEUTRONIUM, units.neutronium, options);
+    }
+    if (units.oxygen !== 0) {
+      this.add(Resource.OXYGEN, units.oxygen, options);
+    }
+    if (units.radon !== 0) {
+      this.add(Resource.RADON, units.radon, options);
+    }
+    if (units.ptfe !== 0) {
+      this.add(Resource.PTFE, units.ptfe, options);
+    }
+    if (units.pbi !== 0) {
+      this.add(Resource.PBI, units.pbi, options);
+    }
   }
 
   public deductUnits(units: Units) {
@@ -231,8 +252,14 @@ export class Stock {
     this.deduct(Resource.PLANTS, units.plants);
     this.deduct(Resource.ENERGY, units.energy);
     this.deduct(Resource.HEAT, units.heat);
+    this.deduct(Resource.TUNGSTENSTEEL, units.tungstensteel);
+    this.deduct(Resource.NAQUADAH, units.naquadah);
+    this.deduct(Resource.NEUTRONIUM, units.neutronium);
+    this.deduct(Resource.OXYGEN, units.oxygen);
+    this.deduct(Resource.RADON, units.radon);
+    this.deduct(Resource.PTFE, units.ptfe);
+    this.deduct(Resource.PBI, units.pbi); 
   }
-
 
   /**
    * `from` steals up to `qty` units of `resource` from this player. Or, at least as

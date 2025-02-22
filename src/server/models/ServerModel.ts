@@ -261,7 +261,7 @@ export class Server {
       naquadahProduction: player.production.naquadah,
       neutronium: player.neutronium,
       neutroniumProduction: player.production.neutronium,
-      oxygen: player.neutronium,
+      oxygen: player.oxygen,
       oxygenProduction: player.production.oxygen,
       radon: player.radon,
       radonProduction: player.production.radon,

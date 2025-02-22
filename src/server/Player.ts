@@ -878,6 +878,9 @@ export class Player implements IPlayer {
       steel: payment.steel,
       titanium: payment.titanium,
       plants: payment.plants,
+      tungstensteel: payment.tungstensteel,
+      naquadah: payment.naquadah,
+      neutronium: payment.neutronium,
     });
 
     this.stock.deductUnits(standardUnits);
