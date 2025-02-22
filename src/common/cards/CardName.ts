@@ -1045,4 +1045,5 @@ export enum CardName {
 
   // Gregtech
   NYIPZUTY = 'Nyip Zuty',
+  WATER_ELECTROLYSIS_PLANT = 'Water Electrolysis Plant',
 }

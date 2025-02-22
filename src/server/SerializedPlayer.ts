@@ -79,4 +79,20 @@ export interface SerializedPlayer extends DeprecatedFields{
   victoryPointsByGeneration: Array<number>;
   globalParameterSteps: Record<GlobalParameter, number>;
   user?: DiscordId;
+
+  // GregTech resources
+  tungstensteel: number;
+  tungstensteelProduction: number;
+  naquadah: number;
+  naquadahProduction: number;
+  neutronium: number;
+  neutroniumProduction: number;
+  oxygen: number;
+  oxygenProduction: number;
+  radon: number;
+  radonProduction: number;
+  ptfe: number;
+  ptfeProduction: number;
+  pbi: number;
+  pbiProduction: number;
 }

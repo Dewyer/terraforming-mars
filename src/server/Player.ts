@@ -1885,6 +1885,21 @@ export class Player implements IPlayer {
       energyProduction: this.production.energy,
       heat: this.heat,
       heatProduction: this.production.heat,
+      // GregTech Resources
+      tungstensteel: this.tungstensteel,
+      tungstensteelProduction: this.production.tungstensteel,
+      naquadah: this.naquadah,
+      naquadahProduction: this.production.naquadah,
+      neutronium: this.neutronium,
+      neutroniumProduction: this.production.neutronium,
+      oxygen: this.oxygen,
+      oxygenProduction: this.production.oxygen,
+      radon: this.radon,
+      radonProduction: this.production.radon,
+      ptfe: this.ptfe,
+      ptfeProduction: this.production.ptfe,
+      pbi: this.pbi,
+      pbiProduction: this.production.pbi,
       // Resource values
       titaniumValue: this.titaniumValue,
       steelValue: this.steelValue,
@@ -1991,6 +2006,14 @@ export class Player implements IPlayer {
       plants: d.plantProduction,
       steel: d.steelProduction,
       titanium: d.titaniumProduction,
+      // GregTech Resources
+      tungstensteel: d.tungstensteelProduction,
+      naquadah: d.naquadahProduction,
+      neutronium: d.neutroniumProduction,
+      oxygen: d.oxygenProduction,
+      radon: d.radonProduction,
+      ptfe: d.ptfeProduction,
+      pbi: d.pbiProduction,
     }));
     player.removingPlayers = d.removingPlayers;
     player.scienceTagCount = d.scienceTagCount;
@@ -2004,6 +2027,14 @@ export class Player implements IPlayer {
     player.turmoilPolicyActionUsed = d.turmoilPolicyActionUsed;
     player.politicalAgendasActionUsedCount = d.politicalAgendasActionUsedCount;
     player.user = d.user;
+    // GregTech Resources
+    player.tungstensteel = d.tungstensteel;
+    player.naquadah = d.naquadah;
+    player.neutronium = d.neutronium;
+    player.oxygen = d.oxygen;
+    player.radon = d.radon;
+    player.ptfe = d.ptfe;
+    player.pbi = d.pbi;
 
     // Rebuild removed from play cards (Playwrights, Odyssey)
     player.removedFromPlayCards = cardsFromJSON(d.removedFromPlayCards);
