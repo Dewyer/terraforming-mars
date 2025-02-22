@@ -15,6 +15,12 @@ import {StratosieveArray} from './StratosieveArray';
 import {ThoriumReactor} from './ThoriumReactor';
 import {OpenTopIrradiationPlant} from './OpenTopIrradiationPlant';
 import {WetWareVatCenter} from './WetWareVatCenter';
+import {FusionReactorMK1} from './FusionReactorMK1';
+import {FusionReactorMK2} from './FusionReactorMK2';
+import {FusionReactorMK3} from './FusionReactorMK3';
+import {SugarCaneEthylaneFarms} from './SugarCaneEthylaneFarms';
+import {OffWorldUsedCondomExchange} from './OffWorldUsedCondomExchange';
+import {MarsHadDynosours} from './MarsHadDynosours';
 
 export const GREG_CARD_MANIFEST = new ModuleManifest({
   module: 'greg',
@@ -34,6 +40,12 @@ export const GREG_CARD_MANIFEST = new ModuleManifest({
     [CardName.THORIUM_REACTOR]: {Factory: ThoriumReactor},
     [CardName.OPEN_TOP_IRRADIATION_PLANT]: {Factory: OpenTopIrradiationPlant},
     [CardName.WETWARE_VAT_CENTER]: {Factory: WetWareVatCenter},
+    [CardName.FUSION_REACTOR_MK1]: {Factory: FusionReactorMK1},
+    [CardName.FUSION_REACTOR_MK2]: {Factory: FusionReactorMK2},
+    [CardName.FUSION_REACTOR_MK3]: {Factory: FusionReactorMK3},
+    [CardName.SUGAR_CANE_ETHYLANE_FARMS]: {Factory: SugarCaneEthylaneFarms},
+    [CardName.OFF_WORLD_USED_CONDOM_EXCHANGE]: {Factory: OffWorldUsedCondomExchange},
+    [CardName.MARS_HAD_DYNOSOURS]: {Factory: MarsHadDynosours},
   },
   corporationCards: {
   },

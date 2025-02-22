@@ -1060,4 +1060,10 @@ export enum CardName {
   THORIUM_REACTOR = 'Thorium Reactor',
   OPEN_TOP_IRRADIATION_PLANT = 'Open Top Irradiation Plant',
   WETWARE_VAT_CENTER = 'WetWare Vat Center',
+  FUSION_REACTOR_MK1 = 'Fusion Reactor MK1',
+  FUSION_REACTOR_MK2 = 'Fusion Reactor MK2',
+  FUSION_REACTOR_MK3 = 'Fusion Reactor MK3',
+  SUGAR_CANE_ETHYLANE_FARMS = 'Sugar Cane Ethylane Farms',
+  OFF_WORLD_USED_CONDOM_EXCHANGE = 'Off World Used Condom Exchange',
+  MARS_HAD_DYNOSOURS = 'Mars Had Dinosaurs??',
 }
