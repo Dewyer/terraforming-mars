@@ -9,6 +9,8 @@ import {BlueBallsTradeHubs} from './BlueBallsTradeHubs';
 import {RudamentaryMaterialFusionSystem} from './RudamentaryMaterialFusionSystem';
 import {PeerIntoTheSanhell} from './PeerIntoTheSanhell';
 import {IHadThisInMySleave} from './IHadThisInMySleave';
+import {OceanicOxygenCapture} from './OceanicOxygenCapture';
+import {RePointGlassElectrolysis} from './RePointGlassElectrolysis';
 
 export const GREG_CARD_MANIFEST = new ModuleManifest({
   module: 'greg',
@@ -22,6 +24,8 @@ export const GREG_CARD_MANIFEST = new ModuleManifest({
     [CardName.RUDAMENTARY_MATERIAL_FUSION_SYSTEM]: {Factory: RudamentaryMaterialFusionSystem},
     [CardName.PEER_INTO_THE_SANHELL]: {Factory: PeerIntoTheSanhell},
     [CardName.I_HAD_THIS_IN_MY_SLEAVE]: {Factory: IHadThisInMySleave},
+    [CardName.OCEANIC_OXYGEN_CAPTURE]: {Factory: OceanicOxygenCapture},
+    [CardName.RE_POINT_GLASS_ELECTROLYSIS]: {Factory: RePointGlassElectrolysis},
   },
   corporationCards: {
   },

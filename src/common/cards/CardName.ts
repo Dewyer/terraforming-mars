@@ -1054,4 +1054,6 @@ export enum CardName {
   RUDAMENTARY_MATERIAL_FUSION_SYSTEM = 'Rudamentary Material Fusion System',
   PEER_INTO_THE_SANHELL = 'Peer into the Sanhell',
   I_HAD_THIS_IN_MY_SLEAVE = 'I Had This in My Sleave',
+  OCEANIC_OXYGEN_CAPTURE = 'Oceanic Oxygen Capture',
+  RE_POINT_GLASS_ELECTROLYSIS = 'Re-Point Glass Electrolysis',
 }
