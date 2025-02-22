@@ -290,7 +290,7 @@ export default Vue.extend({
         classes.push('card-underground-shelters');
         break;
       case CardRenderItemType.TUNGSTENSTEEL:
-        classes.push('card-resource-naquadah');
+        classes.push(this.cardResource, 'card-resource-tungstensteel');
         break;
       case CardRenderItemType.NAQUADAH:
         classes.push(this.cardResource, 'card-resource-naquadah');
