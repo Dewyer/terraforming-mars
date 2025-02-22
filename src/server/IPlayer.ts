@@ -84,6 +84,15 @@ export interface IPlayer {
   energy: number;
   heat: number;
 
+  // Greg
+  tungstensteel: number;
+  naquadah: number;
+  neutronium: number;
+  oxygen: number;
+  radon: number;
+  ptfe: number;
+  pbi: number;
+
   // Helion
   canUseHeatAsMegaCredits: boolean;
   // Luna Trade Federation

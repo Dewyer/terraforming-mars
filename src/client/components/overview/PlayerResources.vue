@@ -40,6 +40,55 @@
       :value="canUseHeatAsMegaCredits ? 1 : 0"
       :resourceProtection="player.protectedResources.heat"
       :productionProtection="player.protectedProduction.heat"/>
+    <player-resource
+      :type="Resource.TUNGSTENSTEEL"
+      :count="player.tungstensteel"
+      :production="player.tungstensteelProduction"
+      :value="2"
+      :resourceProtection="player.protectedResources.tungstensteel"
+      :productionProtection="player.protectedProduction.tungstensteel"/>
+    <player-resource
+      :type="Resource.NAQUADAH"
+      :count="player.naquadah"
+      :production="player.naquadahProduction"
+      :value="3"
+      :resourceProtection="player.protectedResources.naquadah"
+      :productionProtection="player.protectedProduction.naquadah"/>
+    <player-resource
+      :type="Resource.NEUTRONIUM"
+      :count="player.neutronium"
+      :production="player.neutroniumProduction"
+      :value="5"
+      :resourceProtection="player.protectedResources.neutronium"
+      :productionProtection="player.protectedProduction.neutronium"/>
+    <player-resource
+        :type="Resource.OXYGEN"
+        :count="player.oxygen"
+        :production="player.oxygenProduction"
+        :value="1"
+        :resourceProtection="player.protectedResources.oxygen"
+        :productionProtection="player.protectedProduction.oxygen"/>
+    <player-resource
+        :type="Resource.RADON"
+        :count="player.radon"
+        :production="player.radonProduction"
+        :value="1"
+        :resourceProtection="player.protectedResources.radon"
+        :productionProtection="player.protectedProduction.radon"/>
+    <player-resource
+        :type="Resource.PTFE"
+        :count="player.ptfe"
+        :production="player.ptfeProduction"
+        :value="1"
+        :resourceProtection="player.protectedResources.ptfe"
+        :productionProtection="player.protectedProduction.ptfe"/>
+    <player-resource
+        :type="Resource.PBI"
+        :count="player.pbi"
+        :production="player.pbiProduction"
+        :value="1"
+        :resourceProtection="player.protectedResources.pbi"
+        :productionProtection="player.protectedProduction.pbi"/>
   </div>
 </template>
 

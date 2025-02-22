@@ -33,6 +33,36 @@ export class Stock {
     return this.units.heat;
   }
 
+  // Gregs
+
+  public get tungstensteel() {
+    return this.units.tungstensteel;
+  }
+
+  public get naquadah() {
+    return this.units.naquadah;
+  }
+
+  public get neutronium() {
+    return this.units.neutronium;
+  }
+
+  public get oxygen() {
+    return this.units.oxygen;
+  }
+
+  public get radon() {
+    return this.units.radon;
+  }
+
+  public get ptfe() {
+    return this.units.ptfe;
+  }
+
+  public get pbi() {
+    return this.units.pbi;
+  }
+
   public set megacredits(megacredits: number) {
     this.units.megacredits = megacredits;
   }
@@ -55,6 +85,34 @@ export class Stock {
 
   public set heat(heat: number) {
     this.units.heat = heat;
+  }
+
+  public set tungstensteel(v: number) {
+    this.units.tungstensteel = v;
+  }
+
+  public set naquadah(v: number) {
+    this.units.naquadah = v;
+  }
+
+  public set neutronium(v: number) {
+    this.units.neutronium = v;
+  }
+
+  public set oxygen(v: number) {
+    this.units.oxygen = v;
+  }
+
+  public set radon(v: number) {
+    this.units.radon = v;
+  }
+
+  public set ptfe(v: number) {
+    this.units.ptfe = v;
+  }
+
+  public set pbi(v: number) {
+    this.units.pbi = v;
   }
 
   public get(resource: Resource): number {

@@ -78,6 +78,28 @@ export type PublicPlayerModel = {
   victoryPointsBreakdown: IVictoryPointsBreakdown;
   victoryPointsByGeneration: ReadonlyArray<number>;
   alliedParty?: AlliedPartyModel;
+
+  // gregs
+  tungstensteel: number;
+  tungstensteelProduction: number;
+
+  naquadah: number;
+  naquadahProduction: number;
+
+  neutronium: number;
+  neutroniumProduction: number;
+
+  oxygen: number;
+  oxygenProduction: number;
+
+  radon: number;
+  radonProduction: number;
+
+  ptfe: number;
+  ptfeProduction: number;
+
+  pbi: number;
+  pbiProduction: number;
 }
 
 /** A player's view of the game, including their secret information. */

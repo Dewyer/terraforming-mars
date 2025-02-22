@@ -12,6 +12,15 @@ export type Units = {
   plants: number;
   energy: number;
   heat: number;
+
+  // Greg
+  tungstensteel: number;
+  naquadah: number;
+  neutronium: number;
+  oxygen: number;
+  radon: number;
+  ptfe: number;
+  pbi: number;
 }
 
 export namespace Units {
@@ -32,6 +41,27 @@ export namespace Units {
       return 0;
     },
     get heat() {
+      return 0;
+    },
+    get tungstensteel() {
+      return 0;
+    },
+    get naquadah() {
+      return 0;
+    },
+    get neutronium() {
+      return 0;
+    },
+    get oxygen() {
+      return 0;
+    },
+    get radon() {
+      return 0;
+    },
+    get ptfe() {
+      return 0;
+    },
+    get pbi() {
       return 0;
     },
   } as const;
@@ -59,6 +89,14 @@ export namespace Units {
       plants: partialUnits.plants === undefined ? 0 : partialUnits.plants,
       energy: partialUnits.energy === undefined ? 0 : partialUnits.energy,
       heat: partialUnits.heat === undefined ? 0 : partialUnits.heat,
+      // greg
+      tungstensteel: partialUnits.tungstensteel === undefined ? 0 : partialUnits.tungstensteel,
+      naquadah: partialUnits.naquadah === undefined ? 0 : partialUnits.naquadah,
+      neutronium: partialUnits.neutronium === undefined ? 0 : partialUnits.neutronium,
+      oxygen: partialUnits.oxygen === undefined ? 0 : partialUnits.oxygen,
+      radon: partialUnits.radon === undefined ? 0 : partialUnits.radon,
+      ptfe: partialUnits.ptfe === undefined ? 0 : partialUnits.ptfe,
+      pbi: partialUnits.pbi === undefined ? 0 : partialUnits.pbi,
     };
   }
 
@@ -77,6 +115,14 @@ export namespace Units {
       plants: neg(units.plants),
       energy: neg(units.energy),
       heat: neg(units.heat),
+      // greg
+      tungstensteel: neg(units.tungstensteel),
+      naquadah: neg(units.naquadah),
+      neutronium: neg(units.neutronium),
+      oxygen: neg(units.oxygen),
+      radon: neg(units.radon),
+      ptfe: neg(units.ptfe),
+      pbi: neg(units.pbi),
     };
   }
 
@@ -126,5 +172,12 @@ export namespace Units {
     plants: Resource.PLANTS,
     energy: Resource.ENERGY,
     heat: Resource.HEAT,
+    tungstensteel: Resource.TUNGSTENSTEEL,
+    naquadah: Resource.NAQUADAH,
+    neutronium: Resource.NEUTRONIUM,
+    oxygen: Resource.OXYGEN,
+    radon: Resource.RADON,
+    ptfe: Resource.PTFE,
+    pbi: Resource.PBI,
   } as const;
 }

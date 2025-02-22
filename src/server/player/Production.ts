@@ -31,6 +31,34 @@ export class Production {
     return this.units.heat;
   }
 
+  public get tungstensteel() {
+    return this.units.tungstensteel;
+  }
+
+  public get naquadah() {
+    return this.units.naquadah;
+  }
+
+  public get neutronium() {
+    return this.units.neutronium;
+  }
+
+  public get oxygen() {
+    return this.units.oxygen;
+  }
+
+  public get radon() {
+    return this.units.radon;
+  }
+
+  public get ptfe() {
+    return this.units.ptfe;
+  }
+
+  public get pbi() {
+    return this.units.pbi;
+  }
+
   public get(resource: Resource): number {
     return this.units[resource];
   }
@@ -77,6 +105,13 @@ export class Production {
       this.units.titanium + units.titanium >= 0 &&
       this.units.plants + units.plants >= 0 &&
       this.units.energy + units.energy >= 0 &&
+      this.units.tungstensteel + units.tungstensteel >= 0 &&
+      this.units.naquadah + units.naquadah >= 0 &&
+      this.units.neutronium + units.neutronium >= 0 &&
+      this.units.oxygen + units.oxygen >= 0 &&
+      this.units.radon + units.radon >= 0 &&
+      this.units.ptfe + units.ptfe >= 0 &&
+      this.units.pbi + units.pbi >= 0 &&
       this.units.heat + units.heat >= 0;
   }
 
@@ -103,6 +138,34 @@ export class Production {
 
     if (units.heat !== undefined) {
       this.add(Resource.HEAT, units.heat, options);
+    }
+
+    if (units.tungstensteel !== undefined) {
+      this.add(Resource.TUNGSTENSTEEL, units.tungstensteel, options);
+    }
+
+    if (units.naquadah !== undefined) {
+      this.add(Resource.NAQUADAH, units.naquadah, options);
+    }
+
+    if (units.neutronium !== undefined) {
+      this.add(Resource.NEUTRONIUM, units.neutronium, options);
+    }
+
+    if (units.oxygen !== undefined) {
+      this.add(Resource.OXYGEN, units.oxygen, options);
+    }
+
+    if (units.radon !== undefined) {
+      this.add(Resource.RADON, units.radon, options);
+    }
+
+    if (units.ptfe !== undefined) {
+      this.add(Resource.PTFE, units.ptfe, options);
+    }
+
+    if (units.pbi !== undefined) {
+      this.add(Resource.PBI, units.pbi, options);
     }
   }
 }

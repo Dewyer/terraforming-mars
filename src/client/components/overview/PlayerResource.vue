@@ -103,6 +103,15 @@ export default Vue.extend({
       if (this.type === Resource.MEGACREDITS) {
         return this.$t('MegaCredits (M€)');
       }
+
+      if (this.type === Resource.PTFE) {
+        return this.$t('Polytetrafluoroethylene');
+      }
+
+      if (this.type === Resource.PBI) {
+        return this.$t('Polybenzimidazole');
+      }
+
       return this.$t(this.type.charAt(0).toUpperCase() + this.type.slice(1));
     },
     productionCountTooltip(): string {

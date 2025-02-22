@@ -138,6 +138,34 @@ export class Player implements IPlayer {
     return this.stock.heat;
   }
 
+  public get tungstensteel(): number {
+    return this.stock.tungstensteel;
+  }
+
+  public get naquadah(): number {
+    return this.stock.naquadah;
+  }
+
+  public get neutronium(): number {
+    return this.stock.neutronium;
+  }
+
+  public get oxygen(): number {
+    return this.stock.oxygen;
+  }
+
+  public get radon(): number {
+    return this.stock.radon;
+  }
+
+  public get ptfe(): number {
+    return this.stock.ptfe;
+  }
+
+  public get pbi(): number {
+    return this.stock.pbi;
+  }
+
   public get alliedParty(): AlliedParty | undefined {
     return this._alliedParty;
   }
@@ -164,6 +192,34 @@ export class Player implements IPlayer {
 
   public set heat(heat: number) {
     this.stock.heat = heat;
+  }
+
+  public set tungstensteel(v: number) {
+    this.stock.tungstensteel = v;
+  }
+
+  public set naquadah(v: number) {
+    this.stock.naquadah = v;
+  }
+
+  public set neutronium(v: number) {
+    this.stock.neutronium = v;
+  }
+
+  public set oxygen(v: number) {
+    this.stock.oxygen = v;
+  }
+
+  public set radon(v: number) {
+    this.stock.radon = v;
+  }
+
+  public set ptfe(v: number) {
+    this.stock.ptfe = v;
+  }
+
+  public set pbi(v: number) {
+    this.stock.pbi = v;
   }
 
   public setAlliedParty(p: IParty) {

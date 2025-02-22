@@ -255,6 +255,20 @@ export class Server {
       corruption: player.underworldData.corruption,
       excavations: UnderworldExpansion.excavationMarkerCount(player),
       alliedParty: player.alliedParty,
+      tungstensteel: player.tungstensteel,
+      tungstensteelProduction: player.production.tungstensteel,
+      naquadah: player.naquadah,
+      naquadahProduction: player.production.naquadah,
+      neutronium: player.neutronium,
+      neutroniumProduction: player.production.neutronium,
+      oxygen: player.neutronium,
+      oxygenProduction: player.production.oxygen,
+      radon: player.radon,
+      radonProduction: player.production.radon,
+      ptfe: player.ptfe,
+      ptfeProduction: player.production.ptfe,
+      pbi: player.pbi,
+      pbiProduction: player.production.pbi,
     };
   }
 
@@ -266,6 +280,13 @@ export class Server {
       plants: 'off',
       energy: 'off',
       heat: 'off',
+      tungstensteel: 'off',
+      naquadah: 'off',
+      neutronium: 'off',
+      oxygen: 'off',
+      radon: 'off',
+      ptfe: 'off',
+      pbi: 'off',
     };
 
     if (player.alloysAreProtected()) {
@@ -291,6 +312,13 @@ export class Server {
       plants: defaultProteection,
       energy: defaultProteection,
       heat: defaultProteection,
+      tungstensteel: defaultProteection,
+      naquadah: defaultProteection,
+      neutronium: defaultProteection,
+      oxygen: defaultProteection,
+      radon: defaultProteection,
+      ptfe: defaultProteection,
+      pbi: defaultProteection,
     };
 
     if (player.alloysAreProtected()) {
