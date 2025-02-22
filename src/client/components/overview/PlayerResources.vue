@@ -44,21 +44,21 @@
       :type="Resource.TUNGSTENSTEEL"
       :count="player.tungstensteel"
       :production="player.tungstensteelProduction"
-      :value="2"
+      :value="4"
       :resourceProtection="player.protectedResources.tungstensteel"
       :productionProtection="player.protectedProduction.tungstensteel"/>
     <player-resource
       :type="Resource.NAQUADAH"
       :count="player.naquadah"
       :production="player.naquadahProduction"
-      :value="3"
+      :value="8"
       :resourceProtection="player.protectedResources.naquadah"
       :productionProtection="player.protectedProduction.naquadah"/>
     <player-resource
       :type="Resource.NEUTRONIUM"
       :count="player.neutronium"
       :production="player.neutroniumProduction"
-      :value="5"
+      :value="10"
       :resourceProtection="player.protectedResources.neutronium"
       :productionProtection="player.protectedProduction.neutronium"/>
     <player-resource
