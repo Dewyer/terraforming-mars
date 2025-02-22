@@ -77,4 +77,13 @@ export enum CardRenderItemType {
   CORRUPTION_SHIELD = 'corruptive-block',
   GEOSCAN_ICON = 'geoscan-icon',
   UNDERGROUND_SHELTERS = 'underground-shelters',
+
+  // Gregtech stuff
+  TUNGSTENSTEEL = 'tungstensteel',
+  NAQUADAH = 'naquadah',
+  NEUTRONIUM = 'neutronium',
+  OXYGEN_RES = 'oxygen_res',
+  RADON = 'radon',
+  PTFE = 'ptfe',
+  PBI = 'pbi',
 }

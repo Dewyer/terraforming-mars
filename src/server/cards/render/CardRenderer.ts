@@ -153,6 +153,35 @@ abstract class Builder<T> {
     return this._appendToRow(new CardRenderItem(CardRenderItemType.TR, amount, options));
   }
 
+  // Greg
+  public tungstensteel(amount: number, options?: ItemOptions): this {
+    return this._appendToRow(new CardRenderItem(CardRenderItemType.TUNGSTENSTEEL, amount, options));
+  }
+
+  public naquadah(amount: number, options?: ItemOptions): this {
+    return this._appendToRow(new CardRenderItem(CardRenderItemType.NAQUADAH, amount, options));
+  }
+
+  public neutronium(amount: number, options?: ItemOptions): this {
+    return this._appendToRow(new CardRenderItem(CardRenderItemType.NEUTRONIUM, amount, options));
+  }
+
+  public oxygenRes(amount: number, options?: ItemOptions): this {
+    return this._appendToRow(new CardRenderItem(CardRenderItemType.OXYGEN_RES, amount, options));
+  }
+
+  public radon(amount: number, options?: ItemOptions): this {
+    return this._appendToRow(new CardRenderItem(CardRenderItemType.RADON, amount, options));
+  }
+
+  public ptfe(amount: number, options?: ItemOptions): this {
+    return this._appendToRow(new CardRenderItem(CardRenderItemType.PTFE, amount, options));
+  }
+
+  public pbi(amount: number, options?: ItemOptions): this {
+    return this._appendToRow(new CardRenderItem(CardRenderItemType.PBI, amount, options));
+  }
+
   public megacredits(amount: number, options?: ItemOptions): this {
     const item = new CardRenderItem(CardRenderItemType.MEGACREDITS, amount, options);
     item.amountInside = true;

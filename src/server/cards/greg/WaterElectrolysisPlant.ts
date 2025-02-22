@@ -5,6 +5,7 @@ import {CardName} from '../../../common/cards/CardName';
 import {CardType} from '../../../common/cards/CardType';
 import {CardRenderer} from '../render/CardRenderer';
 import {IPlayer} from '../../IPlayer';
+import {Resource} from '../../../common/Resource';
 
 export class WaterElectrolysisPlant extends Card implements IProjectCard {
   constructor() {
@@ -13,17 +14,12 @@ export class WaterElectrolysisPlant extends Card implements IProjectCard {
       name: CardName.WATER_ELECTROLYSIS_PLANT,
       tags: [Tag.BUILDING],
       cost: 12,
-      
-      behavior: {
-        production: {oxygen: 1},
-        stock: {oxygen: 2},
-      },
 
       metadata: {
         cardNumber: 'G7',
         description: 'Requires that you have 2 steel. Increase your oxygen production 1 step and gain 2 oxygen.',
         renderData: CardRenderer.builder((b) => {
-          b.production((pb) => pb.oxygen(1)).oxygen(2);
+          b.production((pb) => pb.oxygenRes(1)).oxygenRes(2);
         }),
       },
     });
@@ -35,6 +31,8 @@ export class WaterElectrolysisPlant extends Card implements IProjectCard {
 
   public override bespokePlay(player: IPlayer) {
     player.steel -= 2;
+    player.production.add(Resource.OXYGEN, 1);
+    player.stock.add(Resource.OXYGEN, 2);
     return undefined;
   }
-} 
+}

@@ -289,6 +289,27 @@ export default Vue.extend({
       case CardRenderItemType.UNDERGROUND_SHELTERS:
         classes.push('card-underground-shelters');
         break;
+      case CardRenderItemType.TUNGSTENSTEEL:
+        classes.push('card-resource-naquadah');
+        break;
+      case CardRenderItemType.NAQUADAH:
+        classes.push(this.cardResource, 'card-resource-naquadah');
+        break;
+      case CardRenderItemType.NEUTRONIUM:
+        classes.push(this.cardResource, 'card-resource-neutronium');
+        break;
+      case CardRenderItemType.OXYGEN_RES:
+        classes.push(this.cardResource, 'card-resource-oxygen-res');
+        break;
+      case CardRenderItemType.RADON:
+        classes.push(this.cardResource, 'card-resource-radon');
+        break;
+      case CardRenderItemType.PTFE:
+        classes.push(this.cardResource, 'card-resource-ptfe');
+        break;
+      case CardRenderItemType.PBI:
+        classes.push(this.cardResource, 'card-resource-pbi');
+        break;
       }
 
       if (this.item.secondaryTag === AltSecondaryTag.NO_PLANETARY_TAG) {
