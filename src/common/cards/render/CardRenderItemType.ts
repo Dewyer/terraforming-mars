@@ -14,6 +14,18 @@ export enum CardRenderItemType {
   TAG = 'tag',
   RESOURCE = 'resource',
 
+  // GregTech
+  IV = 'iv',
+  ZPM = 'zpm',
+  UHV = 'uhv',
+  OXYGEN_RES = 'oxygen-res',
+  TUNGSTENSTEEL = 'tungstensteel',
+  NAQUADAH = 'naquadah',
+  NEUTRONIUM = 'neutronium',
+  RADON = 'radon',
+  PTFE = 'ptfe',
+  PBI = 'pbi',
+
   COLONIES = 'colonies',
   TRADE = 'trade',
   TRADE_DISCOUNT = 'trade_discount',
@@ -77,13 +89,4 @@ export enum CardRenderItemType {
   CORRUPTION_SHIELD = 'corruptive-block',
   GEOSCAN_ICON = 'geoscan-icon',
   UNDERGROUND_SHELTERS = 'underground-shelters',
-
-  // Gregtech stuff
-  TUNGSTENSTEEL = 'tungstensteel',
-  NAQUADAH = 'naquadah',
-  NEUTRONIUM = 'neutronium',
-  OXYGEN_RES = 'oxygen_res',
-  RADON = 'radon',
-  PTFE = 'ptfe',
-  PBI = 'pbi',
 }
