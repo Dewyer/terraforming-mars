@@ -1056,4 +1056,7 @@ export enum CardName {
   I_HAD_THIS_IN_MY_SLEAVE = 'I Had This in My Sleave',
   OCEANIC_OXYGEN_CAPTURE = 'Oceanic Oxygen Capture',
   RE_POINT_GLASS_ELECTROLYSIS = 'Re-Point Glass Electrolysis',
+  STRATOSIEVE_ARRAY = 'Stratosieve Array',
+  THORIUM_REACTOR = 'Thorium Reactor',
+  OPEN_TOP_IRRADIATION_PLANT = 'Open Top Irradiation Plant',
 }
