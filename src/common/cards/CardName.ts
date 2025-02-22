@@ -1052,4 +1052,5 @@ export enum CardName {
   PESKY_ARC_FURNACE = 'Pesky Arc Furnace',
   BLUE_BALLS_TRADE_HUBS = 'Blue Balls Trade Hubs',
   RUDAMENTARY_MATERIAL_FUSION_SYSTEM = 'Rudamentary Material Fusion System',
+  PEER_INTO_THE_SANHELL = 'Peer into the Sanhell',
 }
