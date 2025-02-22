@@ -14,6 +14,7 @@ import {RePointGlassElectrolysis} from './RePointGlassElectrolysis';
 import {StratosieveArray} from './StratosieveArray';
 import {ThoriumReactor} from './ThoriumReactor';
 import {OpenTopIrradiationPlant} from './OpenTopIrradiationPlant';
+import {WetWareVatCenter} from './WetWareVatCenter';
 
 export const GREG_CARD_MANIFEST = new ModuleManifest({
   module: 'greg',
@@ -32,6 +33,7 @@ export const GREG_CARD_MANIFEST = new ModuleManifest({
     [CardName.STRATOSIEVE_ARRAY]: {Factory: StratosieveArray},
     [CardName.THORIUM_REACTOR]: {Factory: ThoriumReactor},
     [CardName.OPEN_TOP_IRRADIATION_PLANT]: {Factory: OpenTopIrradiationPlant},
+    [CardName.WETWARE_VAT_CENTER]: {Factory: WetWareVatCenter},
   },
   corporationCards: {
   },

@@ -15,7 +15,7 @@ export class RTMAlloyElectricBlastFurnace extends Card implements IProjectCard, 
     super({
       type: CardType.ACTIVE,
       name: CardName.RTM_ALLOY_ELECTRIC_BLAST_FURNACE,
-      tags: [Tag.BUILDING, Tag.IV],
+      tags: [Tag.BUILDING, Tag.ZPM],
       cost: 21,
 
       metadata: {

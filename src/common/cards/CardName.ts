@@ -1059,4 +1059,5 @@ export enum CardName {
   STRATOSIEVE_ARRAY = 'Stratosieve Array',
   THORIUM_REACTOR = 'Thorium Reactor',
   OPEN_TOP_IRRADIATION_PLANT = 'Open Top Irradiation Plant',
+  WETWARE_VAT_CENTER = 'WetWare Vat Center',
 }
