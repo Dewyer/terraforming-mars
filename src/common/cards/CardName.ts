@@ -1048,4 +1048,8 @@ export enum CardName {
   WATER_ELECTROLYSIS_PLANT = 'Water Electrolysis Plant',
   KANTHAL_ELECTRIC_BLAST_FURNACE_ARRAY = 'Kanthal EBF Array',
   RTM_ALLOY_ELECTRIC_BLAST_FURNACE = 'RTM Alloy EBF Monster',
+  ALLOYING_HEMISPHERE = 'Alloying Hemisphere',
+  PESKY_ARC_FURNACE = 'Pesky Arc Furnace',
+  BLUE_BALLS_TRADE_HUBS = 'Blue Balls Trade Hubs',
+  RUDAMENTARY_MATERIAL_FUSION_SYSTEM = 'Rudamentary Material Fusion System',
 }
