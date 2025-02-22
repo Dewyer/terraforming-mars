@@ -246,6 +246,10 @@ export class Player implements IPlayer {
   public canUseTitaniumAsMegacredits: boolean = false;
   // Friends in High Places
   public canUseCorruptionAsMegacredits: boolean = false;
+  // Greg
+  public canUseTungsteensteelAsMegacredits: boolean = true;
+  public canUseNaquadahAsMegacredits: boolean = true;
+  public canUseNeutroniumAsMegacredits: boolean = true;
 
   // This generation / this round
   public actionsTakenThisRound: number = 0;
@@ -753,6 +757,9 @@ export class Player implements IPlayer {
     let total = this.megaCredits;
     if (this.canUseHeatAsMegaCredits) total += this.availableHeat();
     if (this.canUseTitaniumAsMegacredits) total += this.titanium * (this.titaniumValue - 1);
+    if (this.canUseTungsteensteelAsMegacredits) total += this.tungstensteel * 4;
+    if (this.canUseNaquadahAsMegacredits) total += this.naquadah * 8;
+    if (this.canUseNeutroniumAsMegacredits) total += this.neutronium * 10;
     return total;
   }
 
@@ -814,6 +821,9 @@ export class Player implements IPlayer {
       graphene: card.tags.includes(Tag.CITY) || card.tags.includes(Tag.SPACE),
       kuiperAsteroids: card.name === CardName.AQUIFER_STANDARD_PROJECT || card.name === CardName.ASTEROID_STANDARD_PROJECT,
       corruption: card.tags.includes(Tag.EARTH) && this.cardIsInEffect(CardName.FRIENDS_IN_HIGH_PLACES),
+      tungstensteel: card.tags.some((tag) => [Tag.SPACE, Tag.BUILDING, Tag.EARTH, Tag.JOVIAN, Tag.IV].includes(tag)),
+      naquadah: card.tags.some((tag) => [Tag.SPACE, Tag.BUILDING, Tag.EARTH, Tag.JOVIAN, Tag.IV, Tag.ZPM].includes(tag)),
+      neutronium: card.tags.some((tag) => [Tag.SPACE, Tag.BUILDING, Tag.EARTH, Tag.JOVIAN, Tag.IV, Tag.ZPM, Tag.UHV].includes(tag)),  
     };
   }
 
@@ -1373,6 +1383,9 @@ export class Player implements IPlayer {
       graphene: this.getSpendable('graphene'),
       kuiperAsteroids: this.getSpendable('kuiperAsteroids'),
       corruption: this.underworldData.corruption,
+      tungstensteel: this.tungstensteel - reserveUnits.tungstensteel,
+      naquadah: this.naquadah - reserveUnits.naquadah,
+      neutronium: this.neutronium - reserveUnits.neutronium,
     };
   }
 
@@ -1415,6 +1428,9 @@ export class Player implements IPlayer {
       graphene: options?.graphene ?? false,
       kuiperAsteroids: options?.kuiperAsteroids ?? false,
       corruption: options?.corruption ?? false,
+      tungstensteel: options?.tungstensteel ?? false,
+      naquadah: options?.naquadah ?? false,
+      neutronium: options?.neutronium ?? false, 
     };
 
     // HOOK: Luna Trade Federation

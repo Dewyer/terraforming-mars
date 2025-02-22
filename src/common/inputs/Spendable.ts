@@ -14,6 +14,10 @@ export const SPENDABLE_STANDARD_RESOURCES = [
   'titanium',
   // Martian Lumber Corp lets players pay for building tags with plants.
   'plants',
+  // Greg resources
+  'tungstensteel',
+  'naquadah',
+  'neutronium',
 ] as const;
 
 /**

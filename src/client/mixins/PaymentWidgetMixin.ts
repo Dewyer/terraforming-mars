@@ -167,11 +167,15 @@ export const PaymentWidgetMixin = {
       case 'steel':
       case 'titanium':
       case 'plants':
-        if (model.hasOwnProperty('available')) {
+      if (model.hasOwnProperty('available')) {
           amount = model.available?.[unit] ?? -1;
+          console.log('amount', amount, unit);
           break;
         }
       // eslint-disable-next-line no-fallthrough
+      case 'tungstensteel':
+      case 'naquadah':
+      case 'neutronium':
       case 'megaCredits':
         amount = thisPlayer[unit];
         break;
@@ -189,6 +193,10 @@ export const PaymentWidgetMixin = {
         amount = (model.playerinput as any)[unit];
         break;
       }
+
+      console.log('amount', amount);
+      console.log('unit', unit);
+      console.log('thisPlayer', thisPlayer);
 
       if (amount === undefined) {
         return 0;
@@ -259,6 +267,9 @@ export const PaymentWidgetMixin = {
         microbes: 'Microbes',
         plants: 'Plants',
         corruption: 'Corruption',
+        tungstensteel: 'Tungstensteel',
+        naquadah: 'Naquadah',
+        neutronium: 'Neutronium',
       };
     },
   },

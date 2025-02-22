@@ -100,6 +100,9 @@ export default Vue.extend({
         'graphene',
         'megaCredits',
         'corruption',
+        'tungstensteel',
+        'naquadah',
+        'neutronium',
       ];
     },
   },
@@ -304,6 +307,12 @@ export default Vue.extend({
             this.tags.includes(Tag.CITY);
       case 'corruption':
         return this.tags.includes(Tag.EARTH) && this.playerinput.paymentOptions.corruption === true;
+      case 'tungstensteel':
+        return (this.tags.includes(Tag.SPACE) || this.tags.includes(Tag.BUILDING) || this.tags.includes(Tag.EARTH) || this.tags.includes(Tag.JOVIAN) || this.tags.includes(Tag.IV));
+      case 'naquadah':
+        return (this.tags.includes(Tag.SPACE) || this.tags.includes(Tag.BUILDING) || this.tags.includes(Tag.EARTH) || this.tags.includes(Tag.JOVIAN) || this.tags.includes(Tag.IV) || this.tags.includes(Tag.ZPM));
+      case 'neutronium':
+        return (this.tags.includes(Tag.SPACE) || this.tags.includes(Tag.BUILDING) || this.tags.includes(Tag.EARTH) || this.tags.includes(Tag.JOVIAN) || this.tags.includes(Tag.IV) || this.tags.includes(Tag.ZPM) || this.tags.includes(Tag.UHV));
       default:
         throw new Error('Unknown unit ' + unit);
       }
@@ -312,9 +321,15 @@ export default Vue.extend({
       if (!this.hasUnits(unit)) {
         return false;
       }
+      console.log('unit2', unit);
+      console.log('tags2', this.tags); 
+
       if (this.card === undefined) {
         return false;
       }
+      console.log('unit3', unit);
+      console.log('tags4', this.tags); 
+
       return this.cardCanUse(unit);
     },
     canUseLunaTradeFederationTitanium(): boolean {

@@ -27,6 +27,11 @@ export const DEFAULT_PAYMENT_VALUES: Record<SpendableResource, number> = {
   heat: 1,
   plants: 3,
 
+  // Greg resources
+  tungstensteel: 4,
+  naquadah: 8,
+  neutronium: 10,
+
   microbes: MICROBES_VALUE,
   floaters: FLOATERS_VALUE,
   lunaArchivesScience: 1,
@@ -54,6 +59,9 @@ export namespace Payment {
     graphene: 0,
     kuiperAsteroids: 0,
     corruption: 0,
+    tungstensteel: 0,
+    naquadah: 0,
+    neutronium: 0,
   } as const;
 
   export function of(payment: Partial<Payment>) : Payment {
@@ -72,6 +80,9 @@ export namespace Payment {
       kuiperAsteroids: payment.kuiperAsteroids ?? 0,
       plants: payment.plants ?? 0,
       corruption: payment.corruption ?? 0,
+      tungstensteel: payment.tungstensteel ?? 0,
+      naquadah: payment.naquadah ?? 0,
+      neutronium: payment.neutronium ?? 0,
     };
   }
 }
