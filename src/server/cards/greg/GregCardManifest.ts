@@ -21,6 +21,10 @@ import {FusionReactorMK3} from './FusionReactorMK3';
 import {SugarCaneEthylaneFarms} from './SugarCaneEthylaneFarms';
 import {OffWorldUsedCondomExchange} from './OffWorldUsedCondomExchange';
 import {MarsHadDynosours} from './MarsHadDynosours';
+import {LargeChemicalPlants} from './LargeChemicalPlants';
+import {DarkTechPlanetFormerSystems} from './DarkTechPlanetFormerSystems';
+import {PlanetWideFreeMatFusion} from './PlanetWideFreeMatFusion';
+import { DysonHeatingSystems } from './DysonHeatingSystems';
 
 export const GREG_CARD_MANIFEST = new ModuleManifest({
   module: 'greg',
@@ -46,6 +50,10 @@ export const GREG_CARD_MANIFEST = new ModuleManifest({
     [CardName.SUGAR_CANE_ETHYLANE_FARMS]: {Factory: SugarCaneEthylaneFarms},
     [CardName.OFF_WORLD_USED_CONDOM_EXCHANGE]: {Factory: OffWorldUsedCondomExchange},
     [CardName.MARS_HAD_DYNOSOURS]: {Factory: MarsHadDynosours},
+    [CardName.LARGE_CHEMICAL_PLANTS]: {Factory: LargeChemicalPlants},
+    [CardName.DARK_TECH_PLANET_FORMER_SYSTEMS]: {Factory: DarkTechPlanetFormerSystems},
+    [CardName.PLANET_WIDE_FREE_MATERIAL_FUSION]: {Factory: PlanetWideFreeMatFusion},
+    [CardName.DYSON_HEATING_SYSTEMS]: {Factory: DysonHeatingSystems},
   },
   corporationCards: {
   },

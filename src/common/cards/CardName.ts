@@ -1066,4 +1066,8 @@ export enum CardName {
   SUGAR_CANE_ETHYLANE_FARMS = 'Sugar Cane Ethylane Farms',
   OFF_WORLD_USED_CONDOM_EXCHANGE = 'Off World Used Condom Exchange',
   MARS_HAD_DYNOSOURS = 'Mars Had Dinosaurs??',
+  LARGE_CHEMICAL_PLANTS = 'Large Chemical Plants',
+  DARK_TECH_PLANET_FORMER_SYSTEMS = 'Dark Tech Planet Former Systems',
+  PLANET_WIDE_FREE_MATERIAL_FUSION = 'Planet Wide Free Material Fusion',
+  DYSON_HEATING_SYSTEMS = 'Dyson Heating Systems',
 }
