@@ -8,6 +8,7 @@ import {PeskyArcFurnace} from './PeskyArcFurnace';
 import {BlueBallsTradeHubs} from './BlueBallsTradeHubs';
 import {RudamentaryMaterialFusionSystem} from './RudamentaryMaterialFusionSystem';
 import {PeerIntoTheSanhell} from './PeerIntoTheSanhell';
+import {IHadThisInMySleave} from './IHadThisInMySleave';
 
 export const GREG_CARD_MANIFEST = new ModuleManifest({
   module: 'greg',
@@ -20,6 +21,7 @@ export const GREG_CARD_MANIFEST = new ModuleManifest({
     [CardName.BLUE_BALLS_TRADE_HUBS]: {Factory: BlueBallsTradeHubs},
     [CardName.RUDAMENTARY_MATERIAL_FUSION_SYSTEM]: {Factory: RudamentaryMaterialFusionSystem},
     [CardName.PEER_INTO_THE_SANHELL]: {Factory: PeerIntoTheSanhell},
+    [CardName.I_HAD_THIS_IN_MY_SLEAVE]: {Factory: IHadThisInMySleave},
   },
   corporationCards: {
   },

@@ -1053,4 +1053,5 @@ export enum CardName {
   BLUE_BALLS_TRADE_HUBS = 'Blue Balls Trade Hubs',
   RUDAMENTARY_MATERIAL_FUSION_SYSTEM = 'Rudamentary Material Fusion System',
   PEER_INTO_THE_SANHELL = 'Peer into the Sanhell',
+  I_HAD_THIS_IN_MY_SLEAVE = 'I Had This in My Sleave',
 }
