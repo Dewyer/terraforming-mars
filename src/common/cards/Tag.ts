@@ -15,6 +15,9 @@ export enum Tag {
     WILD = 'wild',
     EVENT = 'event',
     CLONE = 'clone',
+    IV = 'iv',
+    ZPM = 'zpm',
+    UHV = 'uhv',
 }
 
 export const ALL_TAGS = [
@@ -34,4 +37,7 @@ export const ALL_TAGS = [
   Tag.WILD,
   Tag.EVENT,
   Tag.CLONE,
+  Tag.IV,
+  Tag.ZPM,
+  Tag.UHV,
 ] as const;

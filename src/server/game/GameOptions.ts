@@ -36,6 +36,7 @@ export type GameOptions = {
   ceoExtension: boolean;
   starWarsExpansion: boolean;
   underworldExpansion: boolean;
+  gregExpansion: boolean;
 
   // Variants
   draftVariant: boolean;
@@ -128,4 +129,5 @@ export const DEFAULT_GAME_OPTIONS: GameOptions = {
   undoOption: false,
   venusNextExtension: false,
   twoCorpsVariant: false,
+  gregExpansion: false,
 };

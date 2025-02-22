@@ -169,6 +169,12 @@
                                 <div class="create-game-expansion-icon expansion-icon-underworld"></div>
                                 <span v-i18n>Underworld</span><span> 🆕</span>&nbsp;<a href="https://github.com/terraforming-mars/terraforming-mars/wiki/Underworld" class="tooltip" target="_blank">&#9432;</a>
                             </label>
+
+                          <input type="checkbox" name="greg" id="greg-checkbox" v-model="expansions.greg">
+                          <label for="greg-checkbox" class="expansion-button">
+                            <div class="create-game-greg-icon expansion-icon-greg"></div>
+                            <span v-i18n>Greg</span><span> 🆕</span>&nbsp;<a href="penidz.com" class="tooltip" target="_blank">&#9432;</a>
+                          </label>
                         </div>
 
                         <div class="create-game-page-column">
@@ -785,6 +791,7 @@ export default (Vue as WithRefs<Refs>).extend({
               ceo: json_constants.CEOEXTENSION,
               starwars: json_constants.STARWARSEXPANSION,
               underworld: json_constants.UNDERWORLDEXPANSION,
+              greg: json_constants.GREGEXPANSION,
             } as const;
             for (const expansion of Object.keys(oldFields)) {
               const x = oldFields[expansion as Expansion];

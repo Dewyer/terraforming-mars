@@ -22,6 +22,7 @@ const MODULE_ABBREVIATIONS: Record<GameModule, string> = {
   ceo: 'l', // ceo abbreviation is 'l' for leader, since 'c' and 'C' are already taken
   starwars: 'w',
   underworld: 'u',
+  greg: 'g',
 };
 
 const TYPE_ABBREVIATIONS: Record<TypeOption, string> = {
@@ -57,6 +58,9 @@ const TAG_ABBREVIATIONS: Record<TagOption, string> = {
   [Tag.WILD]: 'd',
   [Tag.EVENT]: 'e',
   [Tag.CLONE]: 'f',
+  [Tag.IV]: 'i',
+  [Tag.ZPM]: 'z',
+  [Tag.UHV]: 'u',
   none: 'g',
 };
 
@@ -91,6 +95,7 @@ export function hashToModel(windowLocationHash: string): CardListModel {
       ceo: true,
       starwars: true,
       underworld: true,
+      greg: true,
     },
     types: {
       event: true,
@@ -124,6 +129,9 @@ export function hashToModel(windowLocationHash: string): CardListModel {
       wild: true,
       event: true,
       clone: true,
+      iv: true,
+      zpm: true,
+      uhv: true,
       none: true,
     },
     searchIndex: new CardListSearchIndex(),
